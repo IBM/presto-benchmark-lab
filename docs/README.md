@@ -6,12 +6,19 @@ logo: images/ibm-blue-background.png
 
 # Introduction
 
-## Workshop Title
+## Presto Workshop - Deploying Presto C++ and Benchmarking with pbench
 
-Welcome to our workshop! In this workshop we'll be using foo to accomplish bar. The goals of this workshop are:
+Welcome to our Presto C++ workshop! This workshop will provide an overview of Presto C++, the next-gen native Presto worker.
+You will learn how to deploy Presto C++ with Docker Compose on your machine and set up a local file-based data source. We will then demonstrate how to run queries manually with Presto CLI and run the new-open source benchmarking tool
+[pbench](https://github.com/prestodb/pbench). Then, you will deploy a similar Presto Java cluster to compare
+the execution time with Presto C++ on a TPC-DS benchmark.
 
-* Goals!
-* Have fun!
+By the end of the workshop, you will know:
+- What Presto C++ is and its benefits
+- How to set up and deploy Presto C++ with Docker Compose locally
+- How to use the Presto CLI to run queries
+- How to use pbench to run benchmarks and view results
+- How to get a quantified speed-up factor of Presto C++ vs Java
 
 ### About this workshop
 
@@ -26,19 +33,24 @@ The introductory page of the workshop is broken down into the following sections
 
 |  |  |
 | :--- | :--- |
-| [Lab 0: Pre-work](pre-work/README.md) | Pre-work for the project |
-| [Lab 1: Some Title](lab-1/README.md) | Exercise to do the thing |
+| [Lab 0: Pre-work](deploy-presto/README.md) | Pre-work for the project |
+| [Lab 1: Some Title](running-pbench/README.md) | Exercise to do the thing |
 
 ## Compatibility
 
 This workshop has been tested on the following platforms:
 
-* **osName**: version X, version Y
+* **MacOS**: Apple Silicon (M-series chips)
 
 ## Technology Used
 
-* Brief Description
+* Docker: A container engine to run several applications in self-contained containers
+* Docker Compose: A YAML-based tool for defining and running multi-container applications
+* Presto: Fast and Reliable SQL Engine for Data Analytics and the Open Lakehouse
+* pbench: A new, open-source benchmarking tool for Presto
 
 ## Credits
 
-* [Full Name](https://github.com/githubid)
+* [Pramod Satya](https://github.com/pramodsatya)
+* [Andrew Xie](https://github.com/Archy-X)
+* [Allen Shen](https://github.com/allenshen13)

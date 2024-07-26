@@ -13,8 +13,8 @@ nav:
   - Welcome:
     - About the workshop: README.md
   - Workshop:
-    - Lab 0. Pre-work: pre-work/README.md
-    - Lab 1. Some Title: lab-1/README.md
+    - 1. Deploying Presto: deploy-presto/README.md
+    - 2. Running pbench: running-pbench/README.md
   - References:
     - Additional Resources: resources/RESOURCES.md
     - Contributors: resources/CONTRIBUTORS.md
