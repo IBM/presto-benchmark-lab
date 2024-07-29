@@ -1,14 +1,13 @@
 # Contributors
 
-## **Remko de Knikker**
+## **Andrew Xie**
 
-* Github: [remkohdev](https://github.com/remkohdev)
-* Twitter: [@remkohdev](https://twitter.com/@remkohdev)
-* LinkedIn: [remkohdev](https://linkedin.com/in/remkohdev)
-* Medium: [@remkohdev](https://mediu.com/@remkohdev)
+* [Github](https://github.com/Archy-X)
 
-## **Steve Martinelli**
+## **Allen Shen**
 
-* Github: [stevemar](https://github.com/stevemar)
-* Twitter: [@stevebot](https://twitter.com/@stevebot)
-* LinkedIn: [stevemar](https://linkedin.com/in/stevemar)
+* [Github](https://github.com/allenshen13)
+
+## **Pramod Satya**
+
+* [Github](https://github.com/pramodsatya)
