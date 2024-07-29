@@ -35,7 +35,7 @@ cd prestorials
 
 ### 2.1 Download data
 
-Download the data.tar file [here]().
+Download the data.tar file [here](https://presto-virtual-lab.s3.amazonaws.com/data.tar).
 
 This file contains the TPC-DS and TPCH tables needed to set up a local Hive metastore.
 

@@ -13,7 +13,8 @@ You will learn how to deploy Presto C++ with Docker Compose on your machine and 
 [pbench](https://github.com/prestodb/pbench). Then, you will deploy a similar Presto Java cluster to compare
 the execution time with Presto C++ on a TPC-DS benchmark.
 
-By the end of the workshop, you will know:
+By the end of the workshop, you will know
+
 - What Presto C++ is and its benefits
 - How to set up and deploy Presto C++ with Docker Compose locally
 - How to use the Presto CLI to run queries
@@ -31,10 +32,10 @@ The introductory page of the workshop is broken down into the following sections
 
 ## Agenda
 
-|  |  |
-| :--- | :--- |
-| [Lab 0: Pre-work](deploy-presto/README.md) | Pre-work for the project |
-| [Lab 1: Some Title](running-pbench/README.md) | Exercise to do the thing |
+|                                                     |                                                      |
+|:----------------------------------------------------|:-----------------------------------------------------|
+| [Part 1](deploy-presto/README.md) | Set-up and deployment of Presto C++ and Java locally |
+| [Part 2](running-pbench/README.md)  | Downloading and running pbench                       |
 
 ## Compatibility
 
