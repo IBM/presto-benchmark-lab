@@ -67,11 +67,11 @@ Now that setup is complete, we can run the docker compose file and use Presto CL
 ### 3.1 Deploying Presto C++
 
 Change into the `docker-compose-native` directory in `prestorials` and run the `docker compose`
-command to start the Presto C++ cluster. We specify the Docker Compose file with `-f docker-compose-arm64.yml`.
+command to start the Presto C++ cluster. We specify the Docker Compose file with `-f docker-compose-arm64.yaml`.
 
 ```bash
 cd docker-compose-native
-docker compose -v -f docker-compose-arm64.yml up
+docker compose -v -f docker-compose-arm64.yaml up
 ```
 
 You should now see the logs of the Presto coordinator and worker starting up. The cluster is ready once
