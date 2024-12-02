@@ -42,6 +42,8 @@ The introductory page of the workshop is broken down into the following sections
 This workshop has been tested on the following platforms:
 
 * **MacOS**: Apple Silicon (M-series chips)
+* **Windows 11**: x86_64
+* **Linux**: x86_64
 
 ## Technology Used
 
