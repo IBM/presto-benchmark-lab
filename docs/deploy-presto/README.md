@@ -10,11 +10,18 @@
 
 ### 1.1 Pull images
 
-Pull the Presto images first to allow time for downloading.
+Pull the Presto images first to allow time for downloading based on your operation system.
 
+For MacOS M Chip:
 ```bash
 docker pull prestodb/presto:latest
 docker pull public.ecr.aws/oss-presto/presto-native:0.289-ubuntu-arm64
+```
+
+For Windows 11 and Linux:
+```bash
+docker pull prestodb/presto:latest
+docker pull public.ecr.aws/oss-presto/presto-native:0.289-20240719122003-30c4804
 ```
 
 ### 2.1 Clone repo
@@ -64,14 +71,38 @@ The `data.tar` file can then be deleted as it is no longer needed.
 
 Now that setup is complete, we can run the docker compose file and use Presto CLI to run queries.
 
-### 3.1 Deploying Presto C++
+### 3.1 Deploying Presto Java
 
-Change into the `docker-compose-native` directory in `prestorials` and run the `docker compose`
-command to start the Presto C++ cluster. We specify the Docker Compose file with `-f docker-compose-arm64.yaml`.
+Change into the `docker-compose` directory in `prestorials` and run the following command to start
+the Presto Java cluster:
 
+For MacOS M Chip:
+```bash
+cd docker-compose
+docker compose -v -f docker-compose-arm64.yaml up
+```
+
+For Windows 11 and Linux:
+```bash
+cd docker-compose
+docker compose -v -f docker-compose.yaml up
+```
+
+### 3.2 Deploying Presto C++
+
+Change into the `docker-compose-native` directory in `prestorials` and run the following command to start
+the Presto C++ cluster.
+
+For MacOS M Chip:
 ```bash
 cd docker-compose-native
 docker compose -v -f docker-compose-arm64.yaml up
+```
+
+For Windows 11 and Linux:
+```bash
+cd docker-compose
+docker compose -v -f docker-compose-amd64.yaml up
 ```
 
 You should now see the logs of the Presto coordinator and worker starting up. The cluster is ready once
@@ -81,19 +112,6 @@ you see something similar to the following log messages:
 coordinator  | 2024-07-25T23:48:15.077Z	INFO	main	com.facebook.presto.server.PrestoServer	======== SERVER STARTED ========
 worker_2     | I0725 23:48:39.584002     8 PeriodicServiceInventoryManager.cpp:118] Announcement succeeded: HTTP 202. State: active.
 worker_1     | I0725 23:48:41.484305     8 PeriodicServiceInventoryManager.cpp:118] Announcement succeeded: HTTP 202. State: active.
-```
-
-### 3.2 Deploying Presto Java
-
-If you just finished Step 3.1 and have a Presto C++ cluster running, skip to the next steps on using Presto CLI and running pbench.
-Return to this step after running pbench and obtaining TPC-DS benchmark times for Presto C++.
-
-Deploying Presto Java is very similar to Presto C++. We just use the Docker Compose file in the `docker-compose` directory of
-`prestorials`.
-
-```bash
-cd docker-compose
-docker compose -v -f docker-compose-arm64.yaml up
 ```
 
 ## 4 Using Presto CLI
